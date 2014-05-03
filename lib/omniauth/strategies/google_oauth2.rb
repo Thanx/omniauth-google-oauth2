@@ -11,7 +11,18 @@ module OmniAuth
 
       option :skip_friends, true
 
-      option :authorize_options, [:access_type, :hd, :login_hint, :prompt, :request_visible_actions, :scope, :state, :redirect_uri, :include_granted_scopes]
+      option :authorize_options, [
+        :access_type,
+        :hd,
+        :login_hint,
+        :prompt,
+        :request_visible_actions,
+        :scope,
+        :state,
+        :redirect_uri,
+        :include_granted_scopes,
+        :app_package_name
+      ]
 
       option :client_options, {
         :site          => 'https://accounts.google.com',
